@@ -22,11 +22,30 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.880749, 0)
 size = Vector3(0.8, 1.268, 0.8)
 material = SubResource("StandardMaterial3D_6eaj5")
 
+[node name="CSGBox3D5" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.160181, 3.83963, -8.68376)
+size = Vector3(14.6333, 7.30377, 1.22535)
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.17322, 3.92495, -1.32452)
+size = Vector3(1, 7.13782, 14.7925)
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="CSGCombiner3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.85958, 3.92875, -0.662261)
+size = Vector3(1, 7.13782, 14.7925)
+
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0399429, 1.72385, 3.75478)
 
 [node name="Safe" parent="." instance=ExtResource("1_ov6bs")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.45354, 0.891236, 0, -0.891236, 0.45354, 0, 6.28251, 3.42078)
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.00825534, 0.999966, 0, -0.999966, 0.00825534, 0, 7.49726, 0)
+light_energy = 7.548
+light_indirect_energy = 4.938
+light_volumetric_fog_energy = 3.092
+light_size = 2.315
+shadow_enabled = true
+spot_range = 13.4812
+spot_angle = 72.5246
